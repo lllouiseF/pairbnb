@@ -12,9 +12,9 @@ export class PlacesService {
 private _places = new BehaviorSubject<Place[]>([
   
     new Place(
-      'p1', 'Hotel Skypark Dongdaemun', 
-    'In the heart of Seoul', 
-    'https://www.kayak.com/rimg/himg/6a/7f/fd/revato-2378-53217-627460.jpg?width=968&height=607&xhint=546&yhint=645&crop=true&caller=HotelBigCarousel&watermarkheight=16&watermarkpadding=10', 
+      'p1', 'THE PENINSULA MANILA', 
+    'Located in the heart of Makati', 
+    'https://pix6.agoda.net/hotelImages/5665043/0/0e2d2a4a94b36e28cd5514522da7b46d.jpg?s=1024x768', 
     45,
     new Date('2021-03-21'),
     new Date('2025-12-31'),
@@ -22,9 +22,9 @@ private _places = new BehaviorSubject<Place[]>([
     ),
 
     new Place(
-      'p2', 'Hotel Skypark Myeongdong III', 
-    'Romantic Place', 
-    'https://content.r9cdn.net/himg/75/61/89/revato-2376-49088-690820.jpg',
+      'p2', 'Okada Manila', 
+    'Manila grand icon', 
+    'https://pix6.agoda.net/hotelImages/1622220/-1/028d55deaf69952582fe7a0ba6eae7a6.jpg?s=1024x768',
     41,
     new Date('2021-03-21'),
     new Date('2025-12-31'),
@@ -32,9 +32,9 @@ private _places = new BehaviorSubject<Place[]>([
     ),
 
     new Place(
-      'p3', 'Tmark Grand Hotel Myeongdong', 
-    'Cool Place', 
-    'https://www.kayak.com/rimg/himg/82/b8/d6/revato-1216301-12072004-060906.jpg?width=968&height=607&xhint=682&yhint=1474&crop=true&caller=HotelBigCarousel&watermarkheight=16&watermarkpadding=10',
+      'p3', 'Nobu Hotel Manila', 
+    'Part of the City of Dreams Casino Resort Complex', 
+    'https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2016/25083/25083_0_nobuhotelmanila_fsa-g.jpg',
     44,
     new Date('2021-03-21'),
     new Date('2025-12-31'),
