@@ -41,18 +41,72 @@ private _places = new BehaviorSubject<Place[]>([
     'abc'
     ),
     new Place(
-      'p4', 'Tmark Grand Hotel Myeongdong', 
-    'Cool Place', 
-    'https://www.kayak.com/rimg/himg/82/b8/d6/revato-1216301-12072004-060906.jpg?width=968&height=607&xhint=682&yhint=1474&crop=true&caller=HotelBigCarousel&watermarkheight=16&watermarkpadding=10',
+      'p4', 'Edsa Shangri-la', 
+    'Staycation approved', 
+    'http://www.shangri-la.com/uploadedImages/Shangri-la_Hotels/New_Website/SLM%20-%20HOTEL%20BANNER-%20ABOUT.jpg?width=720&height=355&mode=crop&quality=80',
     44,
     new Date('2021-03-21'),
     new Date('2025-12-31'),
     'abc'
     ),
     new Place(
-      'p5', 'Tmark Grand Hotel Myeongdong', 
-    'Cool Place', 
-    'https://i.pinimg.com/564x/50/70/c6/5070c61fcf66c3fab3a00f03d2307e67.jpg',
+      'p5', 'Sheraton', 
+    'First and finest luxury hotel', 
+    'https://cache.marriott.com/marriottassets/marriott/MNLSB/mnlsb-exterior-5162-hor-clsc.jpg?interpolation=progressive-bilinear&downsize=*:256px',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p6', 'Conrad Manila', 
+    ' The unobstructed view of Manila Bay welcomes you', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/738/73869867.jpg',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p7', 'Grand Hyatt Manila', 
+    ' Staycation approved', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/188/188551097.jpg',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p8', 'Dusit Thani Manila', 
+    ' Luxury, heritage and comfort combine gracefully', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/232/232054428.jpg',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p9', 'Hyatt Regency Manila City of Dreams', 
+    ' 5-star luxury', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/110/110319208.jpg',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p10', 'Marco Polo Ortigas Manila', 
+    'Luxurious rooms with spectacular views', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/279/279139696.jpg',
+    44,
+    new Date('2021-03-21'),
+    new Date('2025-12-31'),
+    'abc'
+    ),
+    new Place(
+      'p11', 'Belmont Hotel Manila', 
+    'Located at the heart of Resorts World Manila', 
+    'https://cf.bstatic.com/images/hotel/max1024x768/563/56358725.jpg',
     44,
     new Date('2021-03-21'),
     new Date('2025-12-31'),
