@@ -14,6 +14,7 @@ import { DiscoverPage } from './discover.page';
     FormsModule,
     IonicModule,
     DiscoverPageRoutingModule
+
   ],
   declarations: [DiscoverPage]
 })
