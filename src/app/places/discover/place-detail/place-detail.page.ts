@@ -46,6 +46,7 @@ export class PlaceDetailPage implements OnInit, OnDestroy{
         .subscribe(
           place => {
             this.place = place;
+            console.log(this.place)
             this.isBookable = place.userId !== this.authService.userId;
             this.isLoading = false;
           },

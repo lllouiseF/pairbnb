@@ -65,6 +65,7 @@ fetchPlaces(){
     return this.http.get<PlaceData>(`https://ionic-angular-app-f437c-default-rtdb.firebaseio.com/offered-places/${id}.json`
     ).pipe(
       map(placeData => {
+        console.log(placeData)
         return new Place(id, 
           placeData.title,
           placeData.description,
