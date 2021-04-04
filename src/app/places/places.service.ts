@@ -90,31 +90,35 @@ fetchPlaces(){
     ) 
     {
       let generatedId: string;
-      const newPlace = new Place(
-        Math.random().toString(), 
+      let newPlace: Place;
+      return this.authService.userId.pipe(take(1),switchMap(userId => {
+        if(!userId) {
+          throw new Error('No user found!');
+        }
+        newPlace = new Place(
+          Math.random().toString(), 
       title,
       description, 
       'https://pix6.agoda.net/hotelImages/1622220/-1/028d55deaf69952582fe7a0ba6eae7a6.jpg?s=1024x768',
       price,
        dateFrom,
         dateTo, 
-        this.authService.userId,
+        userId,
         location
         );
 
        return this.http.post<{name: string}>(
          'https://ionic-angular-app-f437c-default-rtdb.firebaseio.com/offered-places.json',
-          { ...newPlace, id: null}).pipe(
-            switchMap(resData => {
-              generatedId = resData.name;
-              return this.places;
-            }),
-            take(1),
-            tap(places => {
-              newPlace.id = generatedId;
-              this._places.next(places.concat(newPlace));
-            })
-          );
+          { ...newPlace, id: null}) }),switchMap(resData => {
+            generatedId = resData.name;
+            return this.places;
+          }),
+          take(1),
+          tap(places => {
+            newPlace.id = generatedId;
+            this._places.next(places.concat(newPlace));
+          })
+        );
 
       // return  this.places.pipe(take(1), delay(1000), tap(places => {    
       //       this._places.next(places.concat(newPlace));
